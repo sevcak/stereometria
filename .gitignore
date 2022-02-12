@@ -1,5 +1,4 @@
 blender/
-*.scss
 
 ### VisualStudioCode ###
 .vscode/*
