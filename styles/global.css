@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/*
+PALLETE
+green - #E5EDB7
+blue - #8BCDCD
+yellow - #FAF0AF
+pink - #F1C5C5
+background - #fcf4be
+*/
+:root {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 500px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+b {
+  font-weight: 600;
+}
+
+body {
+  background: #fcf4be;
+}
+
+h2, h3 {
+  color: #d68aae;
+}
+
+a {
+  color: #d68aae;
+}
+
+#main {
+  min-height: 100vh;
+  margin: 0 2vw;
+}
+
+@media (min-width: 500px) {
+  #main {
+    margin: 0 10vw;
+  }
+}
+
+#title {
+  margin: 1rem;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F1C5C5;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  letter-spacing: .1em;
+}
+
+@media (max-width: 499px) {
+  #title {
+    font-size: 1.8em;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 500px) {
+  #title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 670px) {
+  #title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  #title {
+    font-size: 3rem;
+  }
+}
+
+#title + p {
+  text-align: center;
+  margin: 1rem;
+}
+
+#title::before {
+  position: absolute;
+  z-index: -1;
+  top: .1em;
+  margin-left: .1em;
+  content: '';
+  color: #d68aae;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.quote {
+  text-align: center;
+  margin: 1rem;
+  font-style: italic;
+}
+
+.quote p:nth-child(2) {
+  text-align: right;
+  margin-right: 10vw;
+  font-style: normal;
+}
+
+@media (min-width: 700px) {
+  .quote p:nth-child(2) {
+    margin-right: 20vw;
+  }
+}
+
+.quote a {
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+}
+
+.quote a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  font-size: .6rem;
+  margin-top: 2rem;
+}
+
+.floating-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  bottom: 20px;
+  color: #fcf4be;
+  background: #d68aae;
+  font-size: 40px;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition-duration: .25;
+          transition-duration: .25;
+}
+
+.floating-button i {
+  font-size: 2rem;
+}
+
+.floating-button:hover {
+  -webkit-transition-duration: .25;
+          transition-duration: .25;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.floating-button:active {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.vzorec-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vzorec-container .vzorec {
+  height: 1rem;
+  margin-left: .5em;
+}
+
+.watermark {
+  margin-top: 2em;
+}
+
+.watermark::after {
+  content: '© Lukáš Ševc, 2022';
+}
